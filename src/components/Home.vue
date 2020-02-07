@@ -57,7 +57,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="(item, index) in dataList" :key="item + index">
+                <tr v-for="(item, index) in dataList" :key="item + index"> <!-- 之前缺乏唯一标识key所以报错 -->
                   <td>{{index + 1}}</td>
                   <td>{{item.name}}</td>
                   <td>{{item.time}}</td>
