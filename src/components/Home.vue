@@ -57,7 +57,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="(item, index) in dataList">
+                <tr v-for="(item, index) in dataList" :key="item + index">
                   <td>{{index + 1}}</td>
                   <td>{{item.name}}</td>
                   <td>{{item.time}}</td>
